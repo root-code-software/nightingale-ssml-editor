@@ -14,19 +14,23 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import App from './modules/main.js';
-import './scss/index.scss';
+import App from './modules/main.js'
+import './scss/index.scss'
 
 document.addEventListener('DOMContentLoaded', () => {
-  new App();
+  new App()
   // Init Firebase
   const firebaseConfig = {
-    apiKey: 'AIzaSyCxLwHelYYu6_4FCmxEiwGB3DJHem6-vsk',
-    authDomain: 'nightingale-73361.firebaseapp.com',
-    projectId: 'nightingale-73361',
-    appId: '1:856168060350:web:1ab0fa39c3f6b9e4ddd5ef',
-  };
+    apiKey: 'AIzaSyDdp3n2WWgj-nt-pXv1wQ4n3uh6sm5gf1s',
+    authDomain: 'newsroom-tts.firebaseapp.com',
+    databaseURL: 'https://newsroom-tts.firebaseio.com',
+    projectId: 'newsroom-tts',
+    storageBucket: 'newsroom-tts.appspot.com',
+    messagingSenderId: '346173130872',
+    appId: '1:346173130872:web:ae2b7fa84db720c940c58d',
+  }
+
   // Initialize Firebase
   // eslint-disable-next-line
-  firebase.initializeApp(firebaseConfig);
-});
+  firebase.initializeApp(firebaseConfig)
+})
